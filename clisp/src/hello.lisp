@@ -1,1 +1,9 @@
-(prin1 "Hello World!")
+(defun hello ()
+  (print "hello, world")
+  (ext:exit))
+
+(ext:saveinitmem "hello.exe"
+                 :quiet t               ; バナーを表示しない
+                 :norc t                ; 初期化ファイルをロードしない
+                 :init-function #'hello ; REPLの前にhelloを呼ぶ
+                 :executable t)
