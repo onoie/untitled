@@ -1,2 +1,2 @@
-#! /usr/bin/perl
+#!/bin/perl
 print "HelloWorld"
