@@ -1,0 +1,8 @@
+# hello
+
+```
+./bootstrap.sh
+./configure
+make
+sudo make install
+```
