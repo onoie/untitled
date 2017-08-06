@@ -1,9 +1,9 @@
-CXX=g++
+CC=g++
 MOC=moc-qt4
 CFLAGS=-Wall
-SOURCES=main.cpp slib.cpp
-MOC_HEADERS=slib.h
-EXECUTABLE=main.o
+SOURCES=hello.cc hello_cls.cc
+MOC_HEADERS=hello_cls.h
+EXECUTABLE=hello
 INCDIRS=-I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtCore
 LIBS=-lQtCore -lQtGui
 # Change postfixes
@@ -14,11 +14,11 @@ all: $(EXECUTABLE)
 	@echo Done!
 
 $(EXECUTABLE): $(OBJECTS)
-	$(CXX) $^ $(LIBS) -o $@
+	$(CC) $^ $(LIBS) -o $@
 
 # Generate object files, rule to change postfix
 %.o: %.cc
-	$(CXX) $(CFLAGS) $(INCDIRS) -c $< -o $@
+	$(CC) $(CFLAGS) $(INCDIRS) -c $< -o $@
 
 # Generate cc from h via Qt's Meta Object Compiler, rule to change postfix
 %.moc.cc: %.h
