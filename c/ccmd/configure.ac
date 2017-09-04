@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([hello], [1.0], [onoie3@gmail.com])
+AC_INIT([ccmd], [1.0], [onoie3@gmail.com])
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([src/slib.c])
 AC_CONFIG_HEADERS([config.h])

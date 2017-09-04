@@ -1,5 +1,5 @@
 #include "slib.h"
 int main() {
-    hello();
+    ccmd();
     return 0;
 }

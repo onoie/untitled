@@ -3,6 +3,6 @@
 //
 
 #include <stdio.h>
-void hello(){
-    printf("Hello, World!\n");
+void ccmd(){
+    printf("Hello,C Command!\n");
 }
