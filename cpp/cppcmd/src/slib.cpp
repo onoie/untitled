@@ -4,5 +4,5 @@
 
 #include <stdio.h>
 void hello(){
-    printf("Hello,C++!\n");
+    printf("Hello,C++ Command!\n");
 }
