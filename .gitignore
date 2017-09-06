@@ -1,5 +1,5 @@
 main
 .gitkeep
 clone.sh
-.o
-.beam
+*.o
+*.beam
